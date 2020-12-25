@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lấy lại TK</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div id="banner">
+        <h3>LẤY LẠI TÀI KHOẢN</h3>
+    </div>
+    <div id="main-content">
+        <p><b>Bước 1:</b> Nhấn chọn <img id="icon" src="../images/iconBanQuenTK.png" alt="iconBanQuenTK"/>xuất hiện trang chọn loại khôi phục.</p>
+        <div style="text-align: center;"><img id="form" src="../images/chonLoaiKhoiPhuc.png" alt="chonLoaiKhoiPhuc"/></div>
+        <p><b>Bước 2:</b> Chọn “Tên đăng nhập” sau đó hiển thị trang “Cách nhận tên đăng nhập”</p>
+        <div style="text-align: center;"><img id="form" src="../images/cachnhantendangnhap.png" alt="cachnhantendangnhap"/></div>
+        <ul class="ul">
+            <li class="li_child2">Khách hàng chọn hình thức nhận mã OTP qua email hoặc số điện thoại.
+                <div style="text-align: center;"><img id="form" src="../images/KhoiPhucMatKhau.png" alt="khoiphucmatkhau"/></div>   
+            </li>
+            <li class="li_child2">Nhấn nút “Xác nhận”
+                <ul>
+                    <li class="li_child2">Hệ thống kiểm tra thông tin nhập (địa chỉ email hoặc số điện thoại)</li>
+                    <li class="li_child2">Nếu thông tin nhập sai: thông báo khách hàng thông tin nhập không tồn tại như sau: <br>
+                        “Thông tin đăng ký không tồn tại, vui lòng kiểm tra lại”. <br>
+                        Nếu thông tin nhập đúng hệ thống gửi mã OTP cho khách hàng hàng đồng thời hiển thị bước tiếp theo cho khách hàng nhập OTP.</li>
+                </ul>
+            </li>
+        </ul>   
+        <p><b>Bước 3:</b> Nhập mã OTP
+            <ul class="ul">
+                <li class="li_child2">Khách hàng nhập mã OTP được hệ thống cung cấp.
+                    <div style="text-align: center;"><img id="form" src="../images/xacthucOTP.png" alt="xacthucOTP"/></div>  
+                </li> 
+                <li class="li_child2">Nhấn nút “Xác nhận”
+                    <ul>
+                        <li class="li_child2">Hệ thống kiểm tra thông tin OTP khách hàng vừa nhập.</li>
+                        <li class="li_child2">Nếu mã OTP nhập sai: Hệ thống thông báo mã OTP khách hàng nhập sai và yêu cầu nhập lại.</li>
+                        <li class="li_child2">Nếu mã OTP nhập đúng: Hệ thống sẽ gửi thông tin tên tài khoản (đã đăng ký trước đó) <br>
+                            và mật khẩu (được phát sinh mới) đến số điện thoại/ email đã đăng ký trước đó của khách hàng.</li>
+                    </ul>
+                </li> 
+                <li class="li_child2">Nhấn nút “Gửi lại OTP”
+                    <ul>
+                        <li class="li_child2">Khách hàng trong trường hợp không nhận được mã OTP thì nhấn vào nút 
+                            <img id="icon" src="../images/guilaiOTP.png" alt="guilaiOTP"/> để được gửi lại mã.</li>                
+                    </ul>
+                </li>          
+            </ul>
+        </p>       
+    </div>
+    <div class="footer">
+    </div>
+</body>
+</html>

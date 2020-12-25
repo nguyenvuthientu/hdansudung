@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+  }
+
+div#banner, .footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    color: #fff;
+    left: 0;
+}
+
+div#banner2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cyan;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+div#banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cyan;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.footer{
+    bottom: 0;
+    padding: 20px 0;
+}
+
+div#main-content {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.li_child {
+    margin-left: 20px;
+    padding-top: 5px;
+    list-style: none;
+    font-weight: normal;
+    font-size: 18px !important;
+}
+
+.li_child2 {
+    margin-left: 20px;
+    padding-top: 5px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.li_parent {
+    margin-left: 35px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > .li_parent {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+ol > .li_parent:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;    
+}
+
+.li_parent ol > .li_parent {
+  margin: 0;
+}
+
+.li_parent ol > .li_parent:before {
+  content: counters(item, ".") " ";
+}
+
+.ol {
+    margin-left: 10px;
+}
+
+.ul{
+    margin-left: 60px;
+}
+
+#main-content .ol .li_parent a {
+    color: black;
+}
+
+div#main-content p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+#form{
+    margin-top: 10px;
+    width: 15%;
+}
+
+#icon1{
+    vertical-align: middle;
+    width: 3%;
+}
+
+#icon2{
+    vertical-align: middle;
+    width: 7%;
+}
+
+#icon{
+    vertical-align: middle;
+    width: 10%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #form { width: 50%; }
+    #appstore { width: 55%; }
+    #icon {width: 30%;}
+    #icon1 {width: 10%;}
+    #icon2 {width: 25%;}
+    div#main-content {
+        margin-top: 1px;
+    }
+    div#banner2 {
+        line-height: 25px;
+    }
+}
+
+/* For ipad */
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+    #form { width: 40%; }
+    #appstore { width: 80%; }
+    #icon {width: 15%;}
+    #icon1 {width: 7%;}
+    #icon2 {width: 12%;}
+}
+
+
+
+
+
+
+
